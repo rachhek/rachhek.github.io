@@ -1,0 +1,40 @@
+﻿day,hour,value
+1984,full time,305
+1984,part time,70
+1984,self employed,118
+1984,retired,115
+1984,housewife,126
+1984,student,34
+1984,unemployed,19
+1991,full time,260
+1991,part time,82
+1991,self employed,187
+1991,retired,131
+1991,housewife,148
+1991,student,25
+1991,unemployed,44
+1991,other,1
+1995,full time,261
+1995,part time,88
+1995,self employed,153
+1995,retired,151
+1995,housewife,183
+1995,student,59
+1995,unemployed,128
+1995,other,9
+1999,full time,317
+1999,part time,119
+1999,self employed,207
+1999,retired,155
+1999,housewife,185
+1999,student,75
+1999,unemployed,146
+1999,other,4
+2006,full time,272
+2006,part time,115
+2006,self employed,114
+2006,retired,117
+2006,housewife,151
+2006,student,42
+2006,unemployed,64
+2006,other,5

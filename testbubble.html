@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>D3: A simple packed Bubble Chart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+    <script src="norra2.js"></script>
+
+    <style type="text/css">
+        /* No style rules here yet */
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+
+    </script>
+
+    <div class="row" style="padding:10px">
+        <div class="row">
+            <label style="margin-right:10px">construction_waste_kgm2_gfa</label>
+            <span id="construction_waste_kgm2_gfa_wt"></span>
+        </div>
+        <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="construction_waste_kgm2_gfa">
+        </div>
+    </div>
+
+    <div class="row" style="padding:10px">
+        <div class="row">
+            <label style="margin-right:10px">co2_emissions_tonnes</label>
+            <span id="co2_emissions_tonnes_wt"></span>
+        </div>
+        <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="co2_emissions_tonnes">
+        </div>
+    </div>
+
+    <div class="row" style="padding:10px">
+        <div class="row">
+            <label style="margin-right:10px">total_energy_use_construction_wt</label>
+            <span id="total_energy_use_construction_wt"></span>
+        </div>
+        <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="total_energy_use_construction">
+        </div>
+    </div>
+
+    <div class="row" style="padding:10px">
+        <div class="row">
+            <label style="margin-right:10px">green_space_index_gsi_construction_wt</label>
+            <span id="green_space_index_gsi_construction_wt"></span>
+        </div>
+        <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="green_space_index_gsi_construction">
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="testbubble.js"></script>

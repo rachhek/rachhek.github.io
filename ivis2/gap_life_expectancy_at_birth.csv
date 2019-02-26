@@ -1,0 +1,1154 @@
+﻿day,hour,value
+1981,Afghanistan,41.77
+1982,Afghanistan,42.347
+1983,Afghanistan,42.977
+1984,Afghanistan,43.661
+1985,Afghanistan,44.4
+1986,Afghanistan,45.192
+1987,Afghanistan,46.024
+1988,Afghanistan,46.88
+1989,Afghanistan,47.744
+1990,Afghanistan,48.601
+1991,Afghanistan,49.439
+1992,Afghanistan,50.247
+1993,Afghanistan,51.017
+1994,Afghanistan,51.738
+1995,Afghanistan,52.4
+1996,Afghanistan,52.995
+1997,Afghanistan,53.527
+1998,Afghanistan,54.009
+1999,Afghanistan,54.449
+2000,Afghanistan,54.863
+2001,Afghanistan,55.271
+2002,Afghanistan,55.687
+2003,Afghanistan,56.122
+2004,Afghanistan,56.583
+2005,Afghanistan,57.071
+2006,Afghanistan,57.582
+2007,Afghanistan,58.102
+2008,Afghanistan,58.618
+2009,Afghanistan,59.124
+2010,Afghanistan,59.612
+2011,Afghanistan,60.079
+2012,Afghanistan,60.524
+2013,Afghanistan,60.947
+2014,Afghanistan,61.347
+2015,Afghanistan,61.726
+1981,Argentina,69.746
+1982,Argentina,70.004
+1983,Argentina,70.235
+1984,Argentina,70.439
+1985,Argentina,70.624
+1986,Argentina,70.798
+1987,Argentina,70.972
+1988,Argentina,71.156
+1989,Argentina,71.353
+1990,Argentina,71.566
+1991,Argentina,71.791
+1992,Argentina,72.024
+1993,Argentina,72.257
+1994,Argentina,72.489
+1995,Argentina,72.719
+1996,Argentina,72.945
+1997,Argentina,73.169
+1998,Argentina,73.39
+1999,Argentina,73.608
+2000,Argentina,73.822
+2001,Argentina,74.033
+2002,Argentina,74.24
+2003,Argentina,74.444
+2004,Argentina,74.645
+2005,Argentina,74.843
+2006,Argentina,75.036
+2007,Argentina,75.225
+2008,Argentina,75.41
+2009,Argentina,75.592
+2010,Argentina,75.772
+2011,Argentina,75.95
+2012,Argentina,76.128
+2013,Argentina,76.305
+2014,Argentina,76.482
+2015,Argentina,76.661
+1981,Australia,74.96
+1982,Australia,74.74
+1983,Australia,75.55
+1984,Australia,76.02
+1985,Australia,75.45
+1986,Australia,76.13
+1987,Australia,76.32
+1988,Australia,76.35
+1989,Australia,76.45
+1990,Australia,77.05
+1991,Australia,77.54
+1992,Australia,77.54
+1993,Australia,78.07
+1994,Australia,78.07
+1995,Australia,78.45
+1996,Australia,78.53
+1997,Australia,78.79
+1998,Australia,79.28
+1999,Australia,79.53
+2000,Australia,79.93
+2001,Australia,80.27
+2002,Australia,80.29
+2003,Australia,80.69
+2004,Australia,81.04
+2005,Australia,81.44
+2006,Australia,81.63
+2007,Australia,81.67
+2008,Australia,81.567
+2009,Australia,81.937
+2010,Australia,82.091
+2011,Australia,82.231
+2012,Australia,82.364
+2013,Australia,82.496
+2014,Australia,82.629
+2015,Australia,82.767
+1981,Bangladesh,55.446
+1982,Bangladesh,55.921
+1983,Bangladesh,56.384
+1984,Bangladesh,56.861
+1985,Bangladesh,57.368
+1986,Bangladesh,57.9
+1987,Bangladesh,58.439
+1988,Bangladesh,58.97
+1989,Bangladesh,59.493
+1990,Bangladesh,60.014
+1991,Bangladesh,60.537
+1992,Bangladesh,61.066
+1993,Bangladesh,61.602
+1994,Bangladesh,62.146
+1995,Bangladesh,62.693
+1996,Bangladesh,63.24
+1997,Bangladesh,63.78
+1998,Bangladesh,64.307
+1999,Bangladesh,64.819
+2000,Bangladesh,65.309
+2001,Bangladesh,65.777
+2002,Bangladesh,66.223
+2003,Bangladesh,66.651
+2004,Bangladesh,67.064
+2005,Bangladesh,67.465
+2006,Bangladesh,67.86
+2007,Bangladesh,68.253
+2008,Bangladesh,68.648
+2009,Bangladesh,69.046
+2010,Bangladesh,69.449
+2011,Bangladesh,69.854
+2012,Bangladesh,70.258
+2013,Bangladesh,70.657
+2014,Bangladesh,71.05
+2015,Bangladesh,71.435
+1981,Brazil,63.008
+1982,Brazil,63.353
+1983,Brazil,63.71
+1984,Brazil,64.081
+1985,Brazil,64.466
+1986,Brazil,64.862
+1987,Brazil,65.264
+1988,Brazil,65.667
+1989,Brazil,66.068
+1990,Brazil,66.468
+1991,Brazil,66.867
+1992,Brazil,67.267
+1993,Brazil,67.668
+1994,Brazil,68.066
+1995,Brazil,68.46
+1996,Brazil,68.846
+1997,Brazil,69.221
+1998,Brazil,69.582
+1999,Brazil,69.929
+2000,Brazil,70.261
+2001,Brazil,70.578
+2002,Brazil,70.882
+2003,Brazil,71.177
+2004,Brazil,71.463
+2005,Brazil,71.745
+2006,Brazil,72.022
+2007,Brazil,72.298
+2008,Brazil,72.572
+2009,Brazil,72.846
+2010,Brazil,73.121
+2011,Brazil,73.395
+2012,Brazil,73.667
+2013,Brazil,73.937
+2014,Brazil,74.204
+2015,Brazil,74.468
+1981,Canada,75.55
+1982,Canada,75.76
+1983,Canada,76.13
+1984,Canada,76.43
+1985,Canada,76.41
+1986,Canada,76.56
+1987,Canada,76.86
+1988,Canada,76.93
+1989,Canada,77.2
+1990,Canada,77.51
+1991,Canada,77.69
+1992,Canada,77.95
+1993,Canada,77.83
+1994,Canada,78.01
+1995,Canada,78.13
+1996,Canada,78.4
+1997,Canada,78.61
+1998,Canada,78.83
+1999,Canada,79.05
+2000,Canada,79.41
+2001,Canada,79.65
+2002,Canada,79.77
+2003,Canada,79.95
+2004,Canada,80.25
+2005,Canada,80.36
+2006,Canada,80.78
+2007,Canada,80.592
+2008,Canada,80.743
+2009,Canada,80.814
+2010,Canada,80.986
+2011,Canada,81.157
+2012,Canada,81.323
+2013,Canada,81.482
+2014,Canada,81.633
+2015,Canada,81.778
+1981,China,66.44976
+1982,China,67.588
+1983,China,67.848
+1984,China,68.1
+1985,China,68.344
+1986,China,68.581
+1987,China,68.81
+1988,China,69.032
+1989,China,69.248
+1990,China,69.452
+1991,China,69.638
+1992,China,69.805
+1993,China,69.96
+1994,China,70.115
+1995,China,70.295
+1996,China,70.529
+1997,China,70.832
+1998,China,71.208
+1999,China,71.646
+2000,China,72.124
+2001,China,72.609
+2002,China,73.064
+2003,China,73.462
+2004,China,73.793
+2005,China,74.053
+2006,China,74.253
+2007,China,74.418
+2008,China,74.57
+2009,China,74.718
+2010,China,74.868
+2011,China,75.023
+2012,China,75.178
+2013,China,75.331
+2014,China,75.484
+2015,China,75.636
+1981,Finland,73.98
+1982,Finland,74.55
+1983,Finland,74.46
+1984,Finland,74.77
+1985,Finland,74.44
+1986,Finland,74.8
+1987,Finland,74.83
+1988,Finland,74.79
+1989,Finland,75.01
+1990,Finland,75.04
+1991,Finland,75.45
+1992,Finland,75.7
+1993,Finland,75.94
+1994,Finland,76.64
+1995,Finland,76.66
+1996,Finland,76.94
+1997,Finland,77.13
+1998,Finland,77.34
+1999,Finland,77.53
+2000,Finland,77.76
+2001,Finland,78.23
+2002,Finland,78.37
+2003,Finland,78.63
+2004,Finland,78.96
+2005,Finland,79.09
+2006,Finland,79.49
+2007,Finland,79.53
+2008,Finland,79.699
+2009,Finland,79.783
+2010,Finland,79.987
+2011,Finland,80.18
+2012,Finland,80.362
+2013,Finland,80.535
+2014,Finland,80.699
+2015,Finland,80.855
+1981,France,74.51
+1982,France,74.89
+1983,France,74.87
+1984,France,75.37
+1985,France,75.47
+1986,France,75.75
+1987,France,76.34
+1988,France,76.57
+1989,France,76.69
+1990,France,76.98
+1991,France,77.17
+1992,France,77.46
+1993,France,77.5
+1994,France,77.94
+1995,France,78.06
+1996,France,78.27
+1997,France,78.62
+1998,France,78.79
+1999,France,78.92
+2000,France,79.23
+2001,France,79.41
+2002,France,79.57
+2003,France,79.57
+2004,France,80.5
+2005,France,80.47
+2006,France,80.88
+2007,France,81.14
+2008,France,81.254
+2009,France,81.17
+2010,France,81.35
+2011,France,81.512
+2012,France,81.663
+2013,France,81.81
+2014,France,81.958
+2015,France,82.108
+1981,Germany,73.35397106
+1982,Germany,73.65699814
+1983,Germany,73.93552841
+1984,Germany,74.41389786
+1985,Germany,74.51755747
+1986,Germany,74.72495746
+1987,Germany,75.12292896
+1988,Germany,75.2959479
+1989,Germany,75.47804596
+1990,Germany,75.36787333
+1991,Germany,75.59077955
+1992,Germany,76.04479778
+1993,Germany,76.12218832
+1994,Germany,76.42427978
+1995,Germany,76.60818923
+1996,Germany,76.83810683
+1997,Germany,77.28068342
+1998,Germany,77.64061982
+1999,Germany,77.87648215
+2000,Germany,78.14127463
+2001,Germany,78.49830768
+2002,Germany,78.5806085
+2003,Germany,78.64897055
+2004,Germany,79.23895851
+2005,Germany,79.38040311
+2006,Germany,79.71853382
+2007,Germany,79.88331492
+2008,Germany,79.96925873
+2009,Germany,80.07800038
+2010,Germany,80.23972189
+2011,Germany,80.52363277
+2012,Germany,80.578
+2013,Germany,80.743
+2014,Germany,80.903
+2015,Germany,81.062
+1981,Hungary,69.17
+1982,Hungary,69.39
+1983,Hungary,68.95
+1984,Hungary,68.99
+1985,Hungary,68.93
+1986,Hungary,69.14
+1987,Hungary,69.61
+1988,Hungary,70
+1989,Hungary,69.44
+1990,Hungary,69.41
+1991,Hungary,69.46
+1992,Hungary,69.21
+1993,Hungary,69.25
+1994,Hungary,69.68
+1995,Hungary,70.08
+1996,Hungary,70.67
+1997,Hungary,71.07
+1998,Hungary,71
+1999,Hungary,71.14
+2000,Hungary,71.86
+2001,Hungary,72.49
+2002,Hungary,72.61
+2003,Hungary,72.63
+2004,Hungary,73.04
+2005,Hungary,72.99
+2006,Hungary,73.45
+2007,Hungary,73.45
+2008,Hungary,73.48
+2009,Hungary,74.081
+2010,Hungary,74.227
+2011,Hungary,74.362
+2012,Hungary,74.491
+2013,Hungary,74.62
+2014,Hungary,74.752
+2015,Hungary,74.889
+1981,India,55.767
+1982,India,56.131
+1983,India,56.47
+1984,India,56.792
+1985,India,57.102
+1986,India,57.4
+1987,India,57.687
+1988,India,57.964
+1989,India,58.238
+1990,India,58.518
+1991,India,58.81
+1992,India,59.119
+1993,India,59.447
+1994,India,59.796
+1995,India,60.163
+1996,India,60.547
+1997,India,60.941
+1998,India,61.338
+1999,India,61.735
+2000,India,62.129
+2001,India,62.522
+2002,India,62.913
+2003,India,63.302
+2004,India,63.684
+2005,India,64.056
+2006,India,64.412
+2007,India,64.751
+2008,India,65.07
+2009,India,65.369
+2010,India,65.65
+2011,India,65.915
+2012,India,66.168
+2013,India,66.414
+2014,India,66.655
+2015,India,66.892
+1981,Indonesia,59.137
+1982,Indonesia,59.667
+1983,Indonesia,60.184
+1984,Indonesia,60.688
+1985,Indonesia,61.181
+1986,Indonesia,61.661
+1987,Indonesia,62.13
+1988,Indonesia,62.587
+1989,Indonesia,63.033
+1990,Indonesia,63.469
+1991,Indonesia,63.894
+1992,Indonesia,64.308
+1993,Indonesia,64.713
+1994,Indonesia,65.108
+1995,Indonesia,65.493
+1996,Indonesia,65.87
+1997,Indonesia,66.237
+1998,Indonesia,66.596
+1999,Indonesia,66.946
+2000,Indonesia,67.289
+2001,Indonesia,67.624
+2002,Indonesia,67.951
+2003,Indonesia,68.271
+2004,Indonesia,68.582
+2005,Indonesia,68.883
+2006,Indonesia,69.171
+2007,Indonesia,69.445
+2008,Indonesia,69.705
+2009,Indonesia,69.951
+2010,Indonesia,70.185
+2011,Indonesia,70.408
+2012,Indonesia,70.624
+2013,Indonesia,70.833
+2014,Indonesia,71.039
+2015,Indonesia,71.242
+1981,Japan,76.6
+1982,Japan,77.11
+1983,Japan,77.14
+1984,Japan,77.54
+1985,Japan,77.84
+1986,Japan,78.26
+1987,Japan,78.67
+1988,Japan,78.58
+1989,Japan,79.01
+1990,Japan,79.04
+1991,Japan,79.31
+1992,Japan,79.36
+1993,Japan,79.5
+1994,Japan,79.91
+1995,Japan,79.76
+1996,Japan,80.46
+1997,Japan,80.69
+1998,Japan,80.77
+1999,Japan,80.75
+2000,Japan,81.35
+2001,Japan,81.7
+2002,Japan,82
+2003,Japan,82.07
+2004,Japan,82.36
+2005,Japan,82.27
+2006,Japan,82.68
+2007,Japan,82.87
+2008,Japan,82.81
+2009,Japan,82.932
+2010,Japan,83.092
+2011,Japan,83.255
+2012,Japan,83.418
+2013,Japan,83.58
+2014,Japan,83.739
+2015,Japan,83.897
+1981,Malaysia,68.357
+1982,Malaysia,68.654
+1983,Malaysia,68.943
+1984,Malaysia,69.224
+1985,Malaysia,69.497
+1986,Malaysia,69.763
+1987,Malaysia,70.02
+1988,Malaysia,70.269
+1989,Malaysia,70.511
+1990,Malaysia,70.746
+1991,Malaysia,70.974
+1992,Malaysia,71.197
+1993,Malaysia,71.415
+1994,Malaysia,71.628
+1995,Malaysia,71.836
+1996,Malaysia,72.04
+1997,Malaysia,72.24
+1998,Malaysia,72.435
+1999,Malaysia,72.625
+2000,Malaysia,72.81
+2001,Malaysia,72.989
+2002,Malaysia,73.162
+2003,Malaysia,73.329
+2004,Malaysia,73.491
+2005,Malaysia,73.652
+2006,Malaysia,73.811
+2007,Malaysia,73.973
+2008,Malaysia,74.138
+2009,Malaysia,74.306
+2010,Malaysia,74.479
+2011,Malaysia,74.656
+2012,Malaysia,74.836
+2013,Malaysia,75.017
+2014,Malaysia,75.198
+2015,Malaysia,75.379
+1981,Nepal,48.315
+1982,Nepal,48.998
+1983,Nepal,49.7
+1984,Nepal,50.421
+1985,Nepal,51.158
+1986,Nepal,51.914
+1987,Nepal,52.686
+1988,Nepal,53.471
+1989,Nepal,54.264
+1990,Nepal,55.057
+1991,Nepal,55.843
+1992,Nepal,56.619
+1993,Nepal,57.378
+1994,Nepal,58.115
+1995,Nepal,58.828
+1996,Nepal,59.516
+1997,Nepal,60.181
+1998,Nepal,60.826
+1999,Nepal,61.451
+2000,Nepal,62.055
+2001,Nepal,62.636
+2002,Nepal,63.196
+2003,Nepal,63.736
+2004,Nepal,64.256
+2005,Nepal,64.761
+2006,Nepal,65.252
+2007,Nepal,65.731
+2008,Nepal,66.2
+2009,Nepal,66.66
+2010,Nepal,67.113
+2011,Nepal,67.556
+2012,Nepal,67.989
+2013,Nepal,68.41
+2014,Nepal,68.819
+2015,Nepal,69.215
+1981,Netherlands,75.97
+1982,Netherlands,76.05
+1983,Netherlands,76.25
+1984,Netherlands,76.32
+1985,Netherlands,76.38
+1986,Netherlands,76.36
+1987,Netherlands,76.83
+1988,Netherlands,77.03
+1989,Netherlands,76.87
+1990,Netherlands,77.05
+1991,Netherlands,77.21
+1992,Netherlands,77.42
+1993,Netherlands,77.11
+1994,Netherlands,77.6
+1995,Netherlands,77.64
+1996,Netherlands,77.65
+1997,Netherlands,78.03
+1998,Netherlands,78.12
+1999,Netherlands,78.07
+2000,Netherlands,78.24
+2001,Netherlands,78.45
+2002,Netherlands,78.53
+2003,Netherlands,78.79
+2004,Netherlands,79.38
+2005,Netherlands,79.65
+2006,Netherlands,80
+2007,Netherlands,79.824
+2008,Netherlands,80.024
+2009,Netherlands,80.445
+2010,Netherlands,80.621
+2011,Netherlands,80.77
+2012,Netherlands,80.906
+2013,Netherlands,81.038
+2014,Netherlands,81.171
+2015,Netherlands,81.307
+1981,New Zealand,73.74
+1982,New Zealand,73.84
+1983,New Zealand,73.94
+1984,New Zealand,74.49
+1985,New Zealand,73.99
+1986,New Zealand,74.24
+1987,New Zealand,74.32
+1988,New Zealand,74.6
+1989,New Zealand,75.01
+1990,New Zealand,75.56
+1991,New Zealand,76.2
+1992,New Zealand,76.33
+1993,New Zealand,76.62
+1994,New Zealand,77.07
+1995,New Zealand,76.94
+1996,New Zealand,76.98
+1997,New Zealand,77.55
+1998,New Zealand,78.37
+1999,New Zealand,78.14
+2000,New Zealand,78.9
+2001,New Zealand,78.91
+2002,New Zealand,79.11
+2003,New Zealand,79.41
+2004,New Zealand,79.593
+2005,New Zealand,79.799
+2006,New Zealand,79.98
+2007,New Zealand,80.145
+2008,New Zealand,80.301
+2009,New Zealand,80.501
+2010,New Zealand,80.67
+2011,New Zealand,80.829
+2012,New Zealand,80.982
+2013,New Zealand,81.132
+2014,New Zealand,81.281
+2015,New Zealand,81.43
+1981,Nigeria,45.859
+1982,Nigeria,46.09
+1983,Nigeria,46.246
+1984,Nigeria,46.33
+1985,Nigeria,46.35
+1986,Nigeria,46.323
+1987,Nigeria,46.268
+1988,Nigeria,46.207
+1989,Nigeria,46.153
+1990,Nigeria,46.114
+1991,Nigeria,46.091
+1992,Nigeria,46.079
+1993,Nigeria,46.077
+1994,Nigeria,46.09
+1995,Nigeria,46.119
+1996,Nigeria,46.165
+1997,Nigeria,46.23
+1998,Nigeria,46.321
+1999,Nigeria,46.448
+2000,Nigeria,46.629
+2001,Nigeria,46.886
+2002,Nigeria,47.224
+2003,Nigeria,47.643
+2004,Nigeria,48.132
+2005,Nigeria,48.671
+2006,Nigeria,49.236
+2007,Nigeria,49.799
+2008,Nigeria,50.337
+2009,Nigeria,50.839
+2010,Nigeria,51.297
+2011,Nigeria,51.717
+2012,Nigeria,52.116
+2013,Nigeria,52.506
+2014,Nigeria,52.893
+2015,Nigeria,53.28
+1981,Pakistan,58.337
+1982,Pakistan,58.641
+1983,Pakistan,58.944
+1984,Pakistan,59.251
+1985,Pakistan,59.566
+1986,Pakistan,59.886
+1987,Pakistan,60.208
+1988,Pakistan,60.525
+1989,Pakistan,60.837
+1990,Pakistan,61.142
+1991,Pakistan,61.435
+1992,Pakistan,61.718
+1993,Pakistan,61.991
+1994,Pakistan,62.256
+1995,Pakistan,62.516
+1996,Pakistan,62.776
+1997,Pakistan,63.039
+1998,Pakistan,63.306
+1999,Pakistan,63.578
+2000,Pakistan,63.854
+2001,Pakistan,64.13
+2002,Pakistan,64.401
+2003,Pakistan,64.664
+2004,Pakistan,64.916
+2005,Pakistan,65.153
+2006,Pakistan,65.373
+2007,Pakistan,65.578
+2008,Pakistan,65.768
+2009,Pakistan,65.944
+2010,Pakistan,66.11
+2011,Pakistan,66.268
+2012,Pakistan,66.42
+2013,Pakistan,66.57
+2014,Pakistan,66.719
+2015,Pakistan,66.869
+1981,Philippines,62.422
+1982,Philippines,62.735
+1983,Philippines,63.079
+1984,Philippines,63.442
+1985,Philippines,63.807
+1986,Philippines,64.157
+1987,Philippines,64.479
+1988,Philippines,64.766
+1989,Philippines,65.012
+1990,Philippines,65.219
+1991,Philippines,65.394
+1992,Philippines,65.552
+1993,Philippines,65.703
+1994,Philippines,65.854
+1995,Philippines,66.008
+1996,Philippines,66.166
+1997,Philippines,66.322
+1998,Philippines,66.476
+1999,Philippines,66.627
+2000,Philippines,66.774
+2001,Philippines,66.917
+2002,Philippines,67.056
+2003,Philippines,67.192
+2004,Philippines,67.326
+2005,Philippines,67.46
+2006,Philippines,67.598
+2007,Philippines,67.741
+2008,Philippines,67.891
+2009,Philippines,68.046
+2010,Philippines,68.207
+2011,Philippines,68.372
+2012,Philippines,68.538
+2013,Philippines,68.703
+2014,Philippines,68.865
+2015,Philippines,69.024
+1981,Poland,71.26
+1982,Poland,71.32
+1983,Poland,71.16
+1984,Poland,70.9
+1985,Poland,70.64
+1986,Poland,70.93
+1987,Poland,70.98
+1988,Poland,71.35
+1989,Poland,71.1
+1990,Poland,70.75
+1991,Poland,70.45
+1992,Poland,70.99
+1993,Poland,71.51
+1994,Poland,71.82
+1995,Poland,72.05
+1996,Poland,72.39
+1997,Poland,72.75
+1998,Poland,73.13
+1999,Poland,73.18
+2000,Poland,73.91
+2001,Poland,74.33
+2002,Poland,74.67
+2003,Poland,74.85
+2004,Poland,75.02
+2005,Poland,75.15
+2006,Poland,75.35
+2007,Poland,75.517
+2008,Poland,75.678
+2009,Poland,75.739
+2010,Poland,75.902
+2011,Poland,76.07
+2012,Poland,76.239
+2013,Poland,76.408
+2014,Poland,76.578
+2015,Poland,76.749
+1981,Portugal,71.94
+1982,Portugal,72.77
+1983,Portugal,72.69
+1984,Portugal,72.98
+1985,Portugal,73.26
+1986,Portugal,73.66
+1987,Portugal,74.05
+1988,Portugal,74.07
+1989,Portugal,74.63
+1990,Portugal,74.25
+1991,Portugal,74.19
+1992,Portugal,74.86
+1993,Portugal,74.77
+1994,Portugal,75.76
+1995,Portugal,75.58
+1996,Portugal,75.53
+1997,Portugal,75.97
+1998,Portugal,76.18
+1999,Portugal,76.36
+2000,Portugal,76.84
+2001,Portugal,77.11
+2002,Portugal,77.29
+2003,Portugal,77.49
+2004,Portugal,78.32
+2005,Portugal,78.2
+2006,Portugal,78.94
+2007,Portugal,79.12
+2008,Portugal,78.771
+2009,Portugal,79.06
+2010,Portugal,79.291
+2011,Portugal,79.514
+2012,Portugal,79.732
+2013,Portugal,79.945
+2014,Portugal,80.154
+2015,Portugal,80.359
+1981,Russia,67.92
+1982,Russia,68.38
+1983,Russia,68.15
+1984,Russia,67.67
+1985,Russia,68.33
+1986,Russia,69.95
+1987,Russia,69.96
+1988,Russia,69.81
+1989,Russia,69.73
+1990,Russia,69.36
+1991,Russia,69.11
+1992,Russia,67.98
+1993,Russia,65.24
+1994,Russia,63.93
+1995,Russia,64.62
+1996,Russia,65.89
+1997,Russia,66.79
+1998,Russia,67.14
+1999,Russia,65.99
+2000,Russia,65.38
+2001,Russia,65.3
+2002,Russia,65.01
+2003,Russia,64.92
+2004,Russia,65.29
+2005,Russia,65.33
+2006,Russia,66.65
+2007,Russia,67.57
+2008,Russia,67.89
+2009,Russia,67.416
+2010,Russia,67.622
+2011,Russia,67.764
+2012,Russia,67.874
+2013,Russia,67.979
+2014,Russia,68.089
+2015,Russia,68.209
+1981,Singapore,72.332
+1982,Singapore,72.713
+1983,Singapore,73.101
+1984,Singapore,73.497
+1985,Singapore,73.904
+1986,Singapore,74.326
+1987,Singapore,74.76
+1988,Singapore,75.2
+1989,Singapore,75.636
+1990,Singapore,76.049
+1991,Singapore,76.418
+1992,Singapore,76.732
+1993,Singapore,76.989
+1994,Singapore,77.193
+1995,Singapore,77.358
+1996,Singapore,77.506
+1997,Singapore,77.661
+1998,Singapore,77.845
+1999,Singapore,78.067
+2000,Singapore,78.34
+2001,Singapore,78.666
+2002,Singapore,79.034
+2003,Singapore,79.428
+2004,Singapore,79.835
+2005,Singapore,80.241
+2006,Singapore,80.626
+2007,Singapore,80.979
+2008,Singapore,81.292
+2009,Singapore,81.561
+2010,Singapore,81.788
+2011,Singapore,81.981
+2012,Singapore,82.155
+2013,Singapore,82.322
+2014,Singapore,82.489
+2015,Singapore,82.659
+1981,South Africa,57.519
+1982,South Africa,58.124
+1983,South Africa,58.726
+1984,South Africa,59.31
+1985,South Africa,59.871
+1986,South Africa,60.409
+1987,South Africa,60.921
+1988,South Africa,61.39
+1989,South Africa,61.791
+1990,South Africa,62.096
+1991,South Africa,62.277
+1992,South Africa,62.312
+1993,South Africa,62.186
+1994,South Africa,61.884
+1995,South Africa,61.371
+1996,South Africa,60.613
+1997,South Africa,59.629
+1998,South Africa,58.469
+1999,South Africa,57.196
+2000,South Africa,55.892
+2001,South Africa,54.641
+2002,South Africa,53.526
+2003,South Africa,52.621
+2004,South Africa,51.983
+2005,South Africa,51.675
+2006,South Africa,51.739
+2007,South Africa,52.13
+2008,South Africa,52.776
+2009,South Africa,53.615
+2010,South Africa,54.547
+2011,South Africa,55.461
+2012,South Africa,56.271
+2013,South Africa,56.916
+2014,South Africa,57.367
+2015,South Africa,57.631
+1981,Sri Lanka,68.556
+1982,Sri Lanka,68.829
+1983,Sri Lanka,69.004
+1984,Sri Lanka,69.087
+1985,Sri Lanka,69.108
+1986,Sri Lanka,69.115
+1987,Sri Lanka,69.148
+1988,Sri Lanka,69.235
+1989,Sri Lanka,69.376
+1990,Sri Lanka,69.535
+1991,Sri Lanka,69.652
+1992,Sri Lanka,69.683
+1993,Sri Lanka,69.615
+1994,Sri Lanka,69.473
+1995,Sri Lanka,69.333
+1996,Sri Lanka,69.297
+1997,Sri Lanka,69.442
+1998,Sri Lanka,69.804
+1999,Sri Lanka,70.37
+2000,Sri Lanka,71.078
+2001,Sri Lanka,71.828
+2002,Sri Lanka,72.51
+2003,Sri Lanka,73.04
+2004,Sri Lanka,73.393
+2005,Sri Lanka,73.573
+2006,Sri Lanka,73.623
+2007,Sri Lanka,73.621
+2008,Sri Lanka,73.634
+2009,Sri Lanka,73.686
+2010,Sri Lanka,73.79
+2011,Sri Lanka,73.941
+2012,Sri Lanka,74.116
+2013,Sri Lanka,74.293
+2014,Sri Lanka,74.47
+2015,Sri Lanka,74.642
+1981,Sweden,76.1
+1982,Sweden,76.42
+1983,Sweden,76.66
+1984,Sweden,76.92
+1985,Sweden,76.78
+1986,Sweden,77.04
+1987,Sweden,77.19
+1988,Sweden,77.08
+1989,Sweden,77.74
+1990,Sweden,77.67
+1991,Sweden,77.81
+1992,Sweden,78.16
+1993,Sweden,78.24
+1994,Sweden,78.86
+1995,Sweden,78.94
+1996,Sweden,79.15
+1997,Sweden,79.39
+1998,Sweden,79.53
+1999,Sweden,79.61
+2000,Sweden,79.84
+2001,Sweden,79.93
+2002,Sweden,80.04
+2003,Sweden,80.33
+2004,Sweden,80.67
+2005,Sweden,80.75
+2006,Sweden,80.95
+2007,Sweden,81.08
+2008,Sweden,80.973
+2009,Sweden,81.282
+2010,Sweden,81.426
+2011,Sweden,81.56
+2012,Sweden,81.69
+2013,Sweden,81.818
+2014,Sweden,81.948
+2015,Sweden,82.079
+1981,Switzerland,75.87
+1982,Switzerland,76.21
+1983,Switzerland,76.22
+1984,Switzerland,76.82
+1985,Switzerland,76.94
+1986,Switzerland,77.11
+1987,Switzerland,77.41
+1988,Switzerland,77.43
+1989,Switzerland,77.62
+1990,Switzerland,77.44
+1991,Switzerland,77.72
+1992,Switzerland,78.02
+1993,Switzerland,78.31
+1994,Switzerland,78.6
+1995,Switzerland,78.68
+1996,Switzerland,79.17
+1997,Switzerland,79.37
+1998,Switzerland,79.62
+1999,Switzerland,79.88
+2000,Switzerland,79.99
+2001,Switzerland,80.41
+2002,Switzerland,80.62
+2003,Switzerland,80.72
+2004,Switzerland,81.28
+2005,Switzerland,81.45
+2006,Switzerland,81.75
+2007,Switzerland,81.94
+2008,Switzerland,81.898
+2009,Switzerland,82.032
+2010,Switzerland,82.192
+2011,Switzerland,82.336
+2012,Switzerland,82.471
+2013,Switzerland,82.604
+2014,Switzerland,82.739
+2015,Switzerland,82.876
+1981,Taiwan,71.6
+1982,Taiwan,72.11
+1983,Taiwan,72.09
+1984,Taiwan,72.75
+1985,Taiwan,72.94
+1986,Taiwan,73.07
+1987,Taiwan,73.36
+1988,Taiwan,73.18
+1989,Taiwan,73.49
+1990,Taiwan,73.76
+1991,Taiwan,74.24
+1992,Taiwan,74.21
+1993,Taiwan,74.51
+1994,Taiwan,74.66
+1995,Taiwan,74.47
+1996,Taiwan,74.65
+1997,Taiwan,75.18
+1998,Taiwan,75.36
+1999,Taiwan,75.46
+2000,Taiwan,76.02
+2001,Taiwan,76.39
+2002,Taiwan,76.88
+2003,Taiwan,77.09
+2004,Taiwan,77.19
+2005,Taiwan,77.21
+2006,Taiwan,77.93
+2007,Taiwan,78.12
+2008,Taiwan,78.34
+2009,Taiwan,78.81
+2010,Taiwan,79.15
+2011,Taiwan,79.15
+2012,Taiwan,79.45
+2013,Taiwan,79.75
+1981,Thailand,64.761
+1982,Thailand,65.443
+1983,Thailand,66.207
+1984,Thailand,67.028
+1985,Thailand,67.857
+1986,Thailand,68.633
+1987,Thailand,69.305
+1988,Thailand,69.835
+1989,Thailand,70.211
+1990,Thailand,70.435
+1991,Thailand,70.531
+1992,Thailand,70.549
+1993,Thailand,70.538
+1994,Thailand,70.523
+1995,Thailand,70.525
+1996,Thailand,70.552
+1997,Thailand,70.601
+1998,Thailand,70.673
+1999,Thailand,70.775
+2000,Thailand,70.921
+2001,Thailand,71.123
+2002,Thailand,71.378
+2003,Thailand,71.678
+2004,Thailand,72.015
+2005,Thailand,72.371
+2006,Thailand,72.725
+2007,Thailand,73.061
+2008,Thailand,73.363
+2009,Thailand,73.627
+2010,Thailand,73.852
+2011,Thailand,74.046
+2012,Thailand,74.225
+2013,Thailand,74.401
+2014,Thailand,74.58
+2015,Thailand,74.765
+1981,United Kingdom,74.06
+1982,United Kingdom,74.19
+1983,United Kingdom,74.44
+1984,United Kingdom,74.83
+1985,United Kingdom,74.68
+1986,United Kingdom,74.95
+1987,United Kingdom,75.3
+1988,United Kingdom,75.41
+1989,United Kingdom,75.55
+1990,United Kingdom,75.89
+1991,United Kingdom,76.06
+1992,United Kingdom,76.46
+1993,United Kingdom,76.32
+1994,United Kingdom,76.88
+1995,United Kingdom,76.78
+1996,United Kingdom,77.05
+1997,United Kingdom,77.31
+1998,United Kingdom,77.45
+1999,United Kingdom,77.56
+2000,United Kingdom,78.04
+2001,United Kingdom,78.31
+2002,United Kingdom,78.43
+2003,United Kingdom,78.52
+2004,United Kingdom,79.1
+2005,United Kingdom,79.3
+2006,United Kingdom,79.53
+2007,United Kingdom,79.344
+2008,United Kingdom,79.499
+2009,United Kingdom,79.913
+2010,United Kingdom,80.085
+2011,United Kingdom,80.244
+2012,United Kingdom,80.396
+2013,United Kingdom,80.547
+2014,United Kingdom,80.699
+2015,United Kingdom,80.853
+1981,United States,74.36
+1982,United States,74.65
+1983,United States,74.71
+1984,United States,74.81
+1985,United States,74.79
+1986,United States,74.87
+1987,United States,75.01
+1988,United States,75.02
+1989,United States,75.1
+1990,United States,75.4
+1991,United States,75.5
+1992,United States,75.8
+1993,United States,75.5
+1994,United States,75.7
+1995,United States,75.8
+1996,United States,76.1
+1997,United States,76.5
+1998,United States,76.7
+1999,United States,76.7
+2000,United States,76.8
+2001,United States,76.9
+2002,United States,76.9
+2003,United States,77.1
+2004,United States,77.5
+2005,United States,77.4
+2006,United States,77.7
+2007,United States,77.9
+2008,United States,77.8
+2009,United States,78.352
+2010,United States,78.507
+2011,United States,78.654
+2012,United States,78.797
+2013,United States,78.941
+2014,United States,79.087
+2015,United States,79.235

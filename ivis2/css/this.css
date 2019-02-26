@@ -1,0 +1,77 @@
+ /* Style the tab */
+ .tab {
+    text-align: center;
+    margin: 0 auto;
+    height: 5vh;
+  }
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 5px;
+    transition: 0.3s;
+    font-size: 12px;
+  }
+
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 4px;
+    border-top: none;
+  }
+
+  .sunburstcontainer {
+    height: 80vh;
+    width: 90vh;
+    padding-top: 60px;
+    padding-left: 190px;
+  }
+
+#education {
+    
+}
+
+rect.bordered {
+    stroke: #E6E6E6;
+    stroke-width: 2px;
+}
+
+text.mono {
+    font-size: 6pt;
+    font-family: Consolas, courier;
+    fill: #aaa;
+}
+
+text.axis-workweek {
+    fill: #000;
+}
+
+text.axis-worktime {
+    fill: #000;
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 60px;					
+    height: 20px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}

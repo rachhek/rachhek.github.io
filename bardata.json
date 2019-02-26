@@ -1,0 +1,56 @@
+[
+  {
+    "propertyName": "Stora Sj_fallet 1",
+    "OperationEnergy": "",
+    "ConstructionEnergy": 53,
+    "DesignEnergy": 60
+  },
+  {
+    "propertyName": "Stora Sj_fallet 4",
+    "OperationEnergy": 38.94,
+    "ConstructionEnergy": 54,
+    "DesignEnergy": 60
+  },
+  {
+    "propertyName": "Stora Sj_fallet 2",
+    "OperationEnergy": 71.8,
+    "ConstructionEnergy": 54.8,
+    "DesignEnergy": 60
+  },
+  {
+    "propertyName": "Stora Sj_fallet 3",
+    "OperationEnergy": 85.4,
+    "ConstructionEnergy": 54.9,
+    "DesignEnergy": 60
+  },
+  {
+    "propertyName": "Domarudden 2",
+    "OperationEnergy": 97.93,
+    "ConstructionEnergy": 64,
+    "DesignEnergy": 60
+  },
+  {
+    "propertyName": "Hornslandet 1",
+    "OperationEnergy": 68.8,
+    "ConstructionEnergy": 53,
+    "DesignEnergy": 60
+  },
+  {
+    "propertyName": "Sonfj_llet 3",
+    "OperationEnergy": "",
+    "ConstructionEnergy": 47,
+    "DesignEnergy": 60
+  },
+  {
+    "propertyName": "Sonfj_llet 1",
+    "OperationEnergy": 62.2,
+    "ConstructionEnergy": 51.5,
+    "DesignEnergy": 60
+  },
+  {
+    "propertyName": "Sonfj_llet 2",
+    "OperationEnergy": "",
+    "ConstructionEnergy": 52,
+    "DesignEnergy": 60
+  }
+]
