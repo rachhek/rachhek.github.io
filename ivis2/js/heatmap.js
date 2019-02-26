@@ -121,19 +121,18 @@ var heatmapChart = function (tsvFile, containerId) {
                 .attr("class", "legend");
 
             legend.append("rect")
-                .attr("x", function (d, i) { return legendElementWidth * i; })
+                .attr("x", function (d, i) { return legendElementWidth/2 * i; })
                 .attr("y", 50)
-                .attr("width", legendElementWidth)
+                .attr("width", legendElementWidth/2)
                 .attr("height", gridSize / 2)
                 .style("fill", function (d, i) { return colors[i]; });
 
             legend.append("text")
                 .attr("class", "mono")
                 .text(function (d) { return "≥ " + Math.round(d); })
-                .attr("x", function (d, i) { return legendElementWidth * i; })
-                .attr("x", function (d, i) { return legendElementWidth * i; })
+                .attr("x", function (d, i) { return legendElementWidth/2     * i; })
                 .attr("y", 50 + gridSize)
-                .style("font-size", "13px");
+                .style("font-size", "9px");
 
             legend.exit().remove();
 

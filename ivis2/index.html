@@ -58,9 +58,10 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-          <h2 class="text-white-50 mx-auto mt-2 mb-5" style="font-size:32px;">Visualizing the World Through its Own Worldview</h2>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5" style="font-size:32px;">Visualizing the World Through its Own
+          Worldview</h2>
         <h1 class="mx-auto my-0 text-uppercase">Project2</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5" style="font-size:32px;">Let's study Child Birth</h2>
+        <h2 class="text-white-50 mx-auto mt-2  mb-5" style="font-size:32px;">What is the trend and distribution of child birth across socio-demographics fields?</h2>
         <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
       </div>
     </div>
@@ -74,8 +75,8 @@
         <div class=" text-lg-left col-lg-4 mx-auto">
 
           <div class="featured-text text-center">
-            <h4>Gapminder Variables</h4>
-            <p class="text-black-50 mb-0">World trend by</p>
+            <h4>WVS Variables</h4>
+            <p class="text-black-50 mb-0">Zoom in on Average Child birth distribution by</p>
             <p class="text-black-50 mb-0">Wave->year->Country->#Variable#->Average Child Born</p></br>
             <div class="btn-group-vertical">
               <button type="button" class="btn btn-secondary tablinks"
@@ -145,8 +146,19 @@
         </div>
         <div class="col-xl-3 col-lg-5">
           <div class="featured-text text-center text-lg-left">
+            <div id="heatmaplegend"></div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sort Year By
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" >Ascending</a>
+                <a class="dropdown-item" >Descending</a>
+              </div>
+            </div>
             <h4>Gapminder Variables</h4>
-            <p class="text-black-50 mb-0">World trend by </p>
+            <p class="text-black-50 mb-0">View World trend across 30 years by </p>
             <div class="btn-group-vertical">
               <button type="button" class="btn btn-secondary tablinks1"
                 onclick="openHeatMap(event, 'gap_fertility_rate1.csv')">Fertility Rate</button>
@@ -158,12 +170,17 @@
                 onclick="openHeatMap(event, 'gap_adult_literacy_male.csv')">Female Literacy Rate</button>
               <button type="button" class="btn btn-secondary tablinks1"
                 onclick="openHeatMap(event, 'gap_adult_literacy_total.csv')">total litercay rate</button>
+
+
+
               <!-- <button type="button" class="btn btn-secondary">By Employment Status</button>
                     <button type="button" class="btn btn-secondary">By Profession</button>
                     <button type="button" class="btn btn-secondary">By Highest Level of Education</button>
                     <button type="button" class="btn btn-secondary">By age of education completion</button>
                     <button type="button" class="btn btn-secondary">By Marital Status</button>-->
             </div>
+            <br />
+
           </div>
         </div>
       </div>
@@ -179,7 +196,10 @@
         <div class="col-md-10 col-lg-8 mx-auto text-center">
 
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">View Discovery Process</h2>
+          <h2 class="text-white mb-5">
+            <a href="https://1drv.ms/w/s!ArWmrctRiE2RgrJTsbTu59BnZSyNtQ" target="_blank"> View Discovery Process Comparison
+            </a>
+           </h2>
 
 
         </div>
@@ -194,7 +214,7 @@
       <div class="row">
 
         <div class="col-md-4 mb-3 mb-md-0">
-         
+
         </div>
 
         <div class="col-md-4 mb-3 mb-md-0">
@@ -211,11 +231,11 @@
         </div>
 
         <div class="col-md-4 mb-3 mb-md-0">
-        
-      </div>
 
-     
-    </div>
+        </div>
+
+
+      </div>
   </section>
 
   <!-- Footer -->
