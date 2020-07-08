@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Politician</title>
+    <link rel="stylesheet" href="css/politician.css">
+    <link rel="stylesheet" href="css/civilservant.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="module" src="js/intro.min.js"></script>
+    <script src=js/civilintro.js> </script> <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/introjs.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div id="politician">
+        <div id="politician-item">
+            <img id="logo" src="https://bucketeer-55776f05-b829-4c3f-a941-82bba8afe772.s3.amazonaws.com/static/img/logotype.svg" />
+
+                <button type="button" id="help" onclick="civilIntro();" class="topPageButton question">Tutorial</button>
+                <a href="about.html" type="button" id="swapPage" onclick="" class="topPageButton">About</a>
+                <a href="index.html" type="button" id="swapPage" onclick="" class="topPageButton">Phases overview</a>
+
+
+        </div>
+        <div id="container">
+            <div class="map">
+                <div id="map-subject">
+                    <div>
+
+                    </div>
+                    <div>
+
+                        Size:
+
+                        <select id="sizeBox" class="custom-select">
+
+                            <option value="heating_district_heating_kwhm2_atemp_in_operation">District heating</option>
+
+                            <option value="heating_electricity_kwhm2_atemp_in_operation">Electricity heating</option>
+
+                            <option value="hot_water_district_heating_kwhm2_atemp_in_operation">Hot water district
+                                heating</option>
+
+                            <option value="hot_water_electricity_kwhm2_atemp_in_operation">Hot water electricity heating
+                            </option>
+
+                            <option value="green_courtyard_m2">Green courtyard</option>
+
+                            <option value="green_roofs_m2">Green roofs</option>
+
+                            <option value="energy_recovery_kgm2_gfa">Energy reovery</option>
+
+                            <option value="materials_recycling_kgm2_gfa">Materials recycling</option>
+
+                            <option class="rq" value="total_energy_use_kwhm2_atemp_in_operation" selected>Total energy
+                                use</option>
+
+                            <option class="rq" value="total_no._bicycle_parkingspace">Bicycle parking spaces</option>
+
+                            <option class="rq" value="car_parking_spacesappartment">Car parking area</option>
+
+                            <option class="rq" value="locally_generated_electricity_kwhm2_atemp_in_operation">Locally
+                                generated electricity</option>
+
+                            <option class="rq" value="locally_generated_heating_kwhm2_atemp_in_operation">Locally
+                                generated heating</option>
+
+                            <option class="rq" value="green_space_index_gsi_in_operation">Green space index (GSI)
+                            </option>
+
+                            <option class="rq" value="chare_of_electrical_charging_pointsb">Electrical charging points
+                            </option>
+
+                            <option class="rq" value="co2_emissions_tonnes">CO2 emission</option>
+
+                            <option class="rq" value="construction_waste_kgm2_gfa">Construction waste</option>
+
+                            <option class="rq" value="distance_to_recycling_room_m">Distance to recycling room</option>
+
+                            <option class="rq" value="distance_to_vwc_m">Distance to VWC</option>
+
+                        </select>
+
+                    </div>
+
+                    <div>
+
+                        Color:
+
+                        <select id="colorBox" class="custom-select">
+
+                            <option value="total_energy_use_kwhm2_atemp_in_operation" selected>Total energy use</option>
+
+                            <option value="total_no._bicycle_parkingspace">Bicycle parking spaces</option>
+
+                            <option value="car_parking_spacesappartment">Car parking area</option>
+
+                            <option value="locally_generated_electricity_kwhm2_atemp_in_operation">Locally generated
+                                electricity</option>
+
+                            <option value="locally_generated_heating_kwhm2_atemp_in_operation">Locally generated heating
+                            </option>
+
+                            <option value="green_space_index_gsi_in_operation">Green space index (GSI)</option>
+
+                            <option value="chare_of_electrical_charging_pointsb">Electrical charging points</option>
+
+                            <option value="co2_emissions_tonnes">CO2 emission</option>
+
+                            <option value="construction_waste_kgm2_gfa">Construction waste</option>
+
+                            <option value="distance_to_recycling_room_m">Distance to recycling room</option>
+
+                            <option value="distance_to_vwc_m">Distance to VWC</option>
+
+                        </select>
+
+
+
+                    </div>
+                </div>
+                <div id="map"></div>
+                <div id="filter">
+                    Filtered by:
+                    <div class="btn-group" role="group">
+                        <button type="button" data-toggle="button" id="meet"
+                            class="filterButton btn btn-light btn-sm active">
+                            <div id="blueCircle"></div>Meet Requirement
+                        </button>
+                        <button type="button" data-toggle="button" id="below"
+                            class="filterButton btn btn-light btn-sm active">
+                            <div id="purpleCircle"></div>Below Requirement
+                        </button>
+                        <button type="button" data-toggle="button" id="nodata"
+                            class="filterButton btn btn-light btn-sm">
+                            <div id="darkCircle"></div>No Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="developer-tool-container">
+
+                <div class="developer-slider-container ">
+                    <div class="bubble-chart-container chartview">
+                        <div class="subj" id="bubble-legend">
+                            <div id="bubblePhaseName">Phase 1 Developers</div>
+                            <div>
+                              <div class="green legend-bubble">
+                              </div>
+                            <span>Above Avg.</span>
+                          </div>
+                            <div>
+                              <div class="blue legend-bubble">
+                              </div>
+                            <span>Avg</span>
+                          </div>
+                            <div>
+                              <div class="red legend-bubble">
+                              </div>
+                            <span>Under Avg</span></div>
+                        </div>
+                        <div id="bubblechartarea">
+
+                        </div>
+                    </div>
+                    <div class="chartview" id="slider-outer-container">
+                        <div class="subj">Weight Slider</div>
+                        <div class="slider-container">
+                            <div class="indiv">
+                                <div class="slider-value">
+                                    <div id="bicycle_parking_spacesapartment_wt">5 </div>
+                                    <label>Bicycle parking/apartment</label>
+                                </div>
+                                <div class="slidecontainer">
+                                    <input type="range" min="1" max="10" value="5" class="slider"
+                                        id="bicycle_parking_spacesapartment">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slider-value">
+                                    <div id="total_energy_use_construction_wt">5 </div>
+                                    <label>Total energy used</label>
+                                </div>
+                                <div class="slidecontainer">
+                                    <input type="range" min="1" max="10" value="5" class="slider"
+                                        id="total_energy_use_construction">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slider-value">
+                                    <div id="car_parking_spacesapartment_wt">5 </div>
+                                    <label>Car parkings/Apartment</label>
+                                </div>
+                                <div class="slidecontainer">
+                                    <input type="range" min="1" max="10" value="5" class="slider"
+                                        id="car_parking_spacesapartment">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slider-value">
+                                    <div id="chare_of_electrical_charging_points_wt">5 </div>
+                                    <label>Electrical Charging Points</label>
+                                </div>
+                                <div class="slidecontainer">
+                                    <input type="range" min="1" max="10" value="5" class="slider"
+                                        id="chare_of_electrical_charging_points">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slider-value">
+                                    <div id="green_space_index_gsi_construction_wt">5 </div>
+                                    <label>Green space index</label>
+                                </div>
+                                <div class="slidecontainer">
+                                    <input type="range" min="1" max="10" value="5" class="slider"
+                                        id="green_space_index_gsi_construction">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grey developer-detail">
+                    <div class="chartview">
+                        <div class="subj">
+                          Developer Detail
+                        </div>
+                        <div id="radarchart-item-wrapper">
+
+                            <div id="radarchart-item">
+
+                            </div>
+                            <div id="radar-legend">
+                                <table class="legend_table">
+                                    <tr>
+                                        <td style="background:rgb(0,164,153);">
+                                        </td>
+                                        <td> Requirement</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:rgb(254, 221, 0);"></td>
+                                        <td>Construction</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background:rgb(220,68,5);"> </td>
+                                        <td>Design</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background: rgb(132,50,155);"></td>
+                                        <td>Operation</td>
+                                    </tr>
+                                    <tr></tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="chartview">
+                        <div class="subj">Aspects Detail</div>
+                        <div class="aspects-detail-container">
+                            <div id="radar-clicked-text">
+                                    Requirement
+                            </div>
+                            <div class="indiv-aspects-row" id="aspect1">
+                                <div >Generated electricity</div>
+                                <div id="dev-electricity-value" class="aspect-value">2</div>
+                            </div>
+
+                            <div class="indiv-aspects-row" id="aspect2">
+                                <div>Total Energy Use</div>
+                                <div id="dev-energy-value" class="aspect-value">55</div>
+                            </div>
+
+                            <div class="indiv-aspects-row" id="aspect3">
+                                <div>Green Space Index</div>
+                                <div id="dev-gsi-value" class="aspect-value">0.6</div>
+                            </div>
+
+                            <div class="indiv-aspects-row" id="aspect4">
+                                <div>Bicyle Parking</div>
+                                <div id="dev-bicycle-value" class="aspect-value">2.2</div>
+                            </div>
+
+                            <div class="indiv-aspects-row" id="aspect5">
+                                <div>Size Recycling</div>
+                                <div id="dev-recycling-value" class="aspect-value">50</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="footer">
+
+      Stockholm Seaport, Banana Overflow
+
+    </div>
+
+
+</body>
+
+<script src="js/apidata.js"></script>
+<script src="js/requirement-levels.js"></script>
+<script type="text/javascript" src="js/phases.js"></script>
+<script src="js/bubblechart.js"></script>
+<script type="module" src="js/intro.min.js"></script>
+<script type="module" src="js/getdata.js"></script>
+<script src="js/map_civilservant.js"></script>
+<script src="js/stackedradarChart.js"></script>
+
+</html>

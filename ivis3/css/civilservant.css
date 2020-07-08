@@ -1,0 +1,378 @@
+/*PoliticianView */
+
+/*CSS Variables */
+:root{
+    --primary : #ddd;
+    --dark :#333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104,104,104,0.8);
+    --darkPink: rgb(206,0,88);
+    --lightPink: rgb(228,177,195);
+    --darkGreen: rgb(0,164,153);
+    --lightGreen: rgb(182,215,211);
+    --darkOrange: rgb(220,68,5);
+    --lightOrange: rgb(233,189,155);
+    --darkBlue: rgb(0, 119, 200);
+    --lightBlue: rgb(172, 199, 233);
+    --darkPuple: rgb(132,50,155);
+    --lightPurple: rgb(188,170,208);
+    --yellow: rgb(254, 221, 0);
+    --grey: rgb(215, 210, 203);
+    --black: rgb(45, 41, 38);
+    --white: rgb(255,255,255);
+    --font-family: "Open Sans";
+    --bgcolor: rgb(240, 240, 240);
+}
+
+.green{
+  background-color: rgb(0,164,153) !important;
+}
+.blue{
+  background-color: rgb(0,126,196) !important;
+}
+.red{
+  background-color: rgb(196,0,104) !important;
+}
+.legend-bubble{
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  margin-right: 0.2vw;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.radar-legend-rect{
+  height:20px;
+  width:20px;
+}
+.radar-legend-rect > rect{
+  height:20;
+  width:20;
+}
+
+.developer-tool-container {
+  display: none;
+  /* display: grid; */
+  grid-template-rows:4fr 4fr;
+  background-color: white;
+  grid-gap: 0.1vw;
+}
+
+#bubblechartarea, .aspects-detail-container, #radarchart-item-wrapper, .slider-container {
+  background-color: #EEE;
+}
+.developer-slider-container {
+  display: grid;
+  grid-gap: 0.1vw;
+  grid-template-columns: 2fr 1fr;
+  text-align: center;
+}
+
+.slider-container{
+  padding: 1vw 1vw 0 1vw;
+  }
+
+.slider-value>label{
+  font-weight: lighter;
+}
+.legend_table{
+  border-collapse: separate;
+  border-spacing: 0.2vw 0.2vw;
+}
+#radar-legend td{
+  font-size: 0.7vw;
+  width:0.4vw;
+  opacity: 0.8;
+}
+
+.slidecontainer {
+
+  margin-top: -0.6vw;
+    width: 100%; /* Width of the outside container */
+    }
+
+    /* The slider itself */
+    .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 1vw; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    }
+
+    /* Mouse-over effects */
+    .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+    }
+
+    /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+    .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 2vw; /* Set a specific slider handle width */
+    height: 1vw; /* Slider handle height */
+    background: rgb(0,164,153); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    }
+
+    .slider::-moz-range-thumb {
+    width: 2vw; /* Set a specific slider handle width */
+    height: 1vw; /* Slider handle height */
+    background: rgb(0,164,153); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    }
+
+    .slider-value div{
+      font-weight: bold;
+      font-size: 1.5vw;
+      margin-top: -0.5vw;
+      color:var(--darkOrange);
+    }
+
+.aspect-value{
+  color:var(--darkOrange);
+}
+
+.indiv-slider{
+    display:grid;
+    grid-template-areas: 1fr 1fr;
+}
+
+#test123{
+  background:red;
+}
+
+.indiv{
+    grid-template-rows:1fr 1fr;
+}
+
+.slider-value{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+
+}
+
+.slider-value>label{
+    text-align: left;
+}
+
+.developer-detail{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 0.1vw;
+  background-color: white;
+}
+
+.chartviewRadar{
+  display: grid;
+  grid-template-rows: 9 1fr;
+}
+
+.indiv-aspects-row{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  padding-left:1vw;
+  padding-right:1vw;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+
+.indiv-aspects-row div{
+  background: transparent;
+}
+
+#aspect{
+  background-attachment: red;
+}
+
+hr {
+  display: block;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+#bubblechararea-wrapper{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#radarchart-item{
+  width: 100%;
+  height: 100%;
+}
+
+#radar-legend{
+  display:flex;
+  justify-content: center;
+}
+
+#radarchart-item-wrapper{
+  height: 100%;
+  display:grid;
+  grid-template-columns: 9fr 3fr;
+}
+
+.indiv-aspects-row:nth-child(1){
+ text-align: right;
+}
+
+.indiv-aspects-row:nth-child(2){
+  text-align: left;
+ }
+
+.aspects-detail-container{
+  display:grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1x;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#bubblePhaseName{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--darkGreen);
+  color: white;
+}
+#bubble-legend{
+  display:grid;
+  background-color: #CCC;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+#bubble-legend>div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.legend {
+  fill: #333333;
+}
+
+.tooltip {
+  fill: #333333;
+}
+
+#radar-clicked-text
+{
+  background-color: rgb(0, 160, 176);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: lighter;
+
+  font-size: 1.4vw;
+}
+
+.topPageButton {
+  float:right;
+  display: inline-block;
+  white-space: nowrap;
+  background-color: rgb(241, 239, 239);
+  background-image: linear-gradient(top, #eee, #ccc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
+  border: 1px solid rgb(207, 207, 207);
+  padding: 0 1.5em;
+  margin: 0.5em;
+  font: bold 1.0em/1.5em 'Open sans', 'Open sans';
+  text-decoration: none;
+  color: #333;
+  text-shadow: 0 1px 0 rgba(255,255,255,.8);
+  border-radius: .2em;
+  box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
+}
+
+.topPageButton:hover {
+  background-color: #ddd;
+  background-image: linear-gradient(top, #fafafa, #ddd);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');
+}
+
+.topPageButton:active {
+  box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+  position: relative;
+  top: 1px;
+}
+
+.topPageButton:focus {
+  outline: 0;
+  background: #fafafa;
+}
+
+.topPageButton:before {
+  background: #ccc;
+  background: rgba(0,0,0,.1);
+  float: left;
+  width: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0 1em 0 -1em;
+  padding: 0 0em;
+  box-shadow: 1px 0 0 rgba(0,0,0,.5), 2px 0 0 rgba(255,255,255,.5);
+  border-radius: .15em 0 0 .15em;
+  pointer-events: none;
+}
+
+/* Hexadecimal entities for the icons */
+
+.add:before {
+  content: "\271A";
+}
+
+.question:before{
+  content: "\FF1F"
+}
+.edit:before {
+  content: "\270E";
+}
+
+.delete:before {
+  content: "\2718";
+}
+
+.save:before {
+  content: "\2714";
+}
+
+.email:before {
+  content: "\2709";
+}
+
+.like:before {
+  content: "\2764";
+}
+
+.next:before {
+  content: "\279C";
+}
+
+.star:before {
+  content: "\2605";
+}
+
+.spark:before {
+  content: "\2737";
+}
+
+.play:before {
+  content: "\25B6";
+}

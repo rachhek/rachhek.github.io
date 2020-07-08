@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <style>
+    body { margin:0;top:0;right:0;bottom:0;left:0; font-family: 'Open Sans', sans-serif;}
+    .graph {
+      width: 300px;
+      height: 200px;
+      display: none;
+    }
+    #container {
+      width: 1000px;
+      display: grid;
+      grid-template-areas:
+        'map right'
+        'line right';
+      grid-template-columns: 7fr 3fr;
+    }
+    #map{
+      grid-area: map;
+    }
+    #right{
+      gird-area: right;
+    }
+    #line{
+      grid-area: line;
+    }
+
+    div.tooltip {
+      position: absolute;
+      text-align: center;
+      /* width: 200px;
+      height: 28px; */
+      padding: 10px;
+      font: 8px;
+      background: rgb(172,199,233);
+      border: 0px;
+      border-radius: 8px;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="map">
+    </div>
+    <div id="right">
+      <p>Phase: <span id="phase"></span></p>
+      <p>Stage: <span id="stage"></span></p>
+      <img class="graph" src="pictures/hosing.PNG"></img>
+      <p>Project Lists</p>
+    </div>
+    <div id="line">line line</div>
+  </div>
+  <div>
+    <span class="changeView" name="energy" >energy</span>
+    <span class="changeView" name="waste">waste</span>
+    <span class="changeView" name="transports">transport</span>
+    <span class="changeView" name="green">green</span>
+  </div>
+  <script src="js/map.js" type="module"></script>
+</body>

@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

@@ -1,0 +1,144 @@
+/*PoliticianView */
+
+/*CSS Variables */
+:root{
+    --primary : #ddd;
+    --dark :#333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104,104,104,0.8);
+
+    --darkPink: rgb(206,0,88);
+    --lightPink: rgb(228,177,195);
+    --darkGreen: rgb(0,164,153);
+    --lightGreen: rgb(182,215,211);
+    --darkOrange: rgb(220,68,5);
+    --lightOrange: rgb(233,189,155);
+    --darkBlue: rgb(0, 119, 200);
+    --lightBlue: rgb(172, 199, 233);
+    --darkPuple: rgb(132,50,155);
+    --lightPurple: rgb(188,170,208);
+    --yellow: rgb(254, 221, 0);
+    --grey: rgb(215, 210, 203);
+    --black: rgb(45, 41, 38);
+    --white: rgb(255,255,255);
+    --font-family: "Open Sans";
+}
+
+body {
+    background: var(--white);
+    color: var(--black);
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    line-height: 1.45;
+    display: flex;
+    flex-wrap: wrap;
+	margin: 0 !important;
+  }
+
+
+
+  .main-content {
+    margin:10px 10px;
+    flex: 1 1 80%;
+    min-height: 100vh;
+
+  }
+
+  .politician{
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(9,1fr);
+    grid-template-columns: repeat(8,1fr);
+    grid-gap:1px 4px;
+
+   }
+
+   .politician-item{
+    background: var(--primary);
+    color: var(--black);
+    font-family: var(--font-family);
+    font-weight: bold;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+}
+    /* Style the navigation bar */
+.politician-item.nav.navbar {
+
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;   
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px; 
+    width: 80%;
+    background-color :var(--darkGreen);
+    overflow: auto;
+    float: right;
+  }
+  /* Navbar links */
+  .politician-item.nav.navbar a {
+    float: left;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .politician-item.nav.navbar a:hover {
+    background-color:var(--white) ;
+    color:  #000;
+  }
+  
+  /* Current/active navbar link */
+
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .politician-item.nav.navbar a {
+      float: none;
+      display: block;
+    }
+  }
+.politician-item.map{
+    grid-row: span 7;
+    grid-column: span 4;
+}
+
+.politician-item.aspect-detail{
+    grid-row: span 7;
+    grid-column: span 5;
+}
+
+.politician-item.nav {
+    background-color: white;
+    grid-row:span 1;
+    grid-column:5/span 5;
+}
+
+.nested{
+    display:grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:5px;
+    height: 100%;
+	width: 100%;
+    margin :5px 5px;
+
+}
+.phase-detail{
+    grid-row:1;
+    grid-column: 1/span 2;
+}
+.project-dropdown{
+    grid-row:2;
+    grid-column: 1/span 1;
+}
+.developer-detail{
+    grid-row:2;
+    grid-column: 2/span 1;
+}
+.stage-detail{
+    grid-row:3;
+    grid-column: 1/span 2;
+}

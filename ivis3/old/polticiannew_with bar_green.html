@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Politician</title>
+    <link rel="stylesheet" href="css/politician.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--barchart(head)-->
+	<style>
+		.rectangle:hover {
+			fill-opacity: 0.8;
+					}
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+</style>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+<!-- Until here is the head part for barchart ver.4-->
+
+</head>
+
+
+<body>
+	<div class= "main-content">
+		<div class="politician">
+			<div class="politician-item nav">
+				<div class="politician-item nav navbar">
+					<a class="active" href="#"><i class="fa fa-fw fas fa-bolt"></i> Energy</a>
+					<a href="#"><i class="fa fa-fw fas fa-leaf"></i> Green Energy</a>
+					<a href="#"><i class="fa fa-fw fas fa-car"></i> Trasnport</a>
+					<a href="#"><i class="fa fa-fw fas fa-trash"></i>Waste</a>
+					<a href="#"><i class="fa fa-fw fas fa-fire"></i> Co2 Emission</a>
+				</div>
+			</div>
+			<div class="politician-item map">Map</div>
+			<div class="politician-item aspect-detail">
+				<div class="nested">
+					<div class="phase-detail">
+					 Phase Detail
+					</div>
+
+					<!-- From this part is the body part for barchart ver.4-->
+
+					<div class="project-dropdown">
+						Project Name
+						<div id="drop" align=center>
+						</div>
+					</div>
+					<div class="developer-detail">
+						Developer Detial
+					</div>
+					<div class="stage-detail">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+
+	<script>
+
+	var margin = {top: 80, right: 5, bottom: 80, left: 50},
+		width = 500 - margin.left - margin.right,
+		height = 400 - margin.top - margin.bottom;
+
+	var svg = d3.select(".stage-detail").append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+		.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+	d3.csv("Green.csv", function(error, data){
+
+		var elements = Object.keys(data[0])
+			.filter(function(d){
+				return (d != "Stage") ;
+			});
+		var selection = elements[0];
+
+		var y = d3.scaleLinear()
+				.domain([0.5, 0.1+ d3.max(data, function(d){return +d[selection];})])
+				.range([height, 0]);
+
+		var x = d3.scaleBand()
+				.domain(data.map(function(d){ return d.Stage;}))
+				.range([0, width]);
+
+
+		var xAxis = d3.axisBottom()
+			.scale(x)
+
+		var yAxis = d3.axisLeft()
+			.scale(y)
+
+		svg.append("g")
+			.attr("class", "x axis")
+			.attr("transform", "translate(0," + height + ")")
+			.call(xAxis)
+			.selectAll("text")
+			.style("font-size", "16px")
+			.style("font-family","Open Sans")
+			.style("text-anchor", "center")
+			.attr("transform", "rotate(0)" );
+
+
+		svg.append("g")
+			.attr("class", "y axis")
+			.call(yAxis);
+
+		svg.selectAll("rectangle")
+			.data(data)
+			.enter()
+			.append("rect")
+			.attr("class","rectangle")
+			.attr("width", width/data.length-50)
+			.attr("height", function(d){
+				return height - y(+d[selection]);
+			})
+			.attr("fill", function(d,i){
+				if(i==0){
+					return "#B6D7D3"
+				}else if(i==1) {
+					return "#ACC7E9"
+				}else{
+					return "#E4B1C3"
+				}
+			})
+
+			.attr("x", function(d, i){
+				return (30+(width / data.length) * i) ;
+			})
+			.attr("y", function(d){
+				return y(+d[selection]);
+			})
+			.append("title")
+			.text(function(d){
+				return d.Stage + " : " + d[selection];
+			});
+
+		var selector = d3.select("#drop")
+			.append("select")
+			.attr("id","dropdown")
+			.on("change", function(d){
+				selection = document.getElementById("dropdown");
+
+				y.domain([0, 1.0]);
+
+				yAxis.scale(y);
+
+				d3.selectAll(".rectangle")
+					.transition()
+					.attr("height", function(d){
+						return height - y(+d[selection.value]);
+					})
+					.attr("x", function(d, i){
+						return (30+(width / data.length) * i) ;
+					})
+					.attr("y", function(d){
+						return y(+d[selection.value]);
+					})
+					.ease("linear")
+					.select("title")
+					.text(function(d){
+						return d.Stage + " : " + d[selection.value];
+					});
+
+				d3.selectAll("g.y.axis")
+					.transition()
+					.call(yAxis);
+
+			 });
+
+		selector.selectAll("option")
+		  .data(elements)
+		  .enter().append("option")
+		  .attr("value", function(d){
+			return d;
+		  })
+		  .text(function(d){
+			return d;
+		  })
+
+
+	});
+
+	</script>
+</html>

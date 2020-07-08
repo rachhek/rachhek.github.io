@@ -1,0 +1,43 @@
+:root{
+    --firstChartColor: rgb(0,164,153);
+}
+
+.chart-gauge
+{
+  width: 400px;
+  margin: 100px auto  
+ } 
+
+ 
+.chart-filled
+{
+    fill: steelblue;
+}
+
+.chart-empty
+{
+    fill: #dedede;
+}
+            
+.chart-first
+{
+    fill: var(--firstChartColor);
+}
+.chart-second
+{
+    fill: rgb(215, 210, 203);
+}
+
+.needle, .needle-center
+{
+    fill: #000000;
+}
+.text {
+    color: "#112864";
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+svg {
+  font: 10px 'Open Sans', sans-serif;
+}

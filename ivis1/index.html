@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+  <link rel="stylesheet" href="my_css.css" />
+  <title>Info Viz</title>
+  <style>
+    #grp-table tr td{
+      background:transparent;
+    }
+  </style>
+</head>
+
+<body style="background:#f8f9fa">
+  <div style="margin:0 auto;text-align: center">
+     <span style="font-size:24px">
+        <b>DH2321 VT19-1 Information Visualization</b>
+     </span> <br>
+     <b>
+        IVIS19 Project 1: Visualize Student Group Formation based on Individual Skills and Interests <br>
+        <a target="_blank" href="./ivis1-details.pdf">Project Details</a>
+      </b>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link skill-btn skill-btn" id="draw_skill" href="#">Drawing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link skill-btn skill-btn" id="computer_skill" href="#">Computer</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link skill-btn" id="infoviz_skill" href="#">Visualization
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link skill-btn" id="stat_skill" href="#">Statistics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link skill-btn" id="maths_skill" href="#">Maths</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link skill-btn skill-btn" id="programming_skill" href="#">Programming</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link skill-btn skill-btn" id="cg_skill" href="#">Graphics</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link skill-btn" id="hci_skill" href="#">HCI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link skill-btn" id="ux_skill" href="#">UX</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link skill-btn" id="communication_skill" href="#">Communication</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link skill-btn" id="collaboration_skill" href="#">Collaboration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link skill-btn" id="repo_skill" href="#">Repository</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="main-container container-fluid" style="height:100%">
+    <div>
+      <div class="row" style="background: transparent">
+        <div class="col-md-4" id="pie">
+            <P style="padding-left:50px;">
+                Student Distribution
+            </P>
+          </div>
+        <div class="col-md-4" id="personal-info-bar">
+          
+          <table style="height: 100%;width:80%;margin:0 auto;">
+              
+            <tr>
+                Personal Details (Hover on student name to fill)
+              <td style="width:40%">
+                Name
+              </td>
+              <td id="std_name">
+
+              </td>
+            </tr>
+            <tr>
+              <td>Degree</td>
+              <td id="std_major"></td>
+            </tr>
+            <tr>
+              <td>Major</td>
+              <td id="std_degree"></td>
+            </tr>
+            <tr>
+              <td>Hobbies</td>
+              <td id="std_hobbies"></td>
+            </tr>
+
+          </table>
+        </div>
+        <div class="col-md-4" id="detail-bar">
+          
+        </div>
+
+      </div>
+      <div class="row jumbotron" style="background:transparent;margin:0 auto;" id="studentList">
+        <div class="col-md-4 student-list">
+          <div class="skill-level">
+            Experts
+          </div>
+          <div>
+            <ul class="list-ul" id="expert-list">
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 student-list">
+          <div class="skill-level">
+            Intermediates
+          </div>
+          <div class="list-group">
+            <ul class="list-ul list-group" id="intermediate-list">
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 student-list">
+          <div class="skill-level">
+            Beginners
+          </div>
+          <div>
+            <ul class="list-ul list-group" id="beginner-list">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="jumbotron">
+    <div class="row">
+
+
+      <div class="col-md-5" id="weights-container">
+        <div class="row" style="padding:10px">
+          <div class="row">
+            <label style="margin-right:10px">Info Viz skill Weight </label>
+            <span id="infoviz_range_wt"></span>
+          </div>
+          <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="infoviz_range">
+          </div>
+        </div>
+
+        <div class="row" style="padding:10px">
+          <div class="row">
+            <label style="margin-right:10px">Stat skill Weight</label>
+            <span id="stat_range_wt"></span>
+          </div>
+          <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="stat_range">
+          </div>
+        </div>
+
+        <div class="row" style="padding:10px">
+          <div class="row">
+            <label style="margin-right:10px">Math skill Weight</label>
+            <span id="maths_range_wt"></span>
+          </div>
+          <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="maths_range">
+          </div>
+        </div>
+
+        <div class="row" style="padding:10px">
+          <div class="row">
+            <label style="margin-right:10px">Draw skill Weight</label>
+            <span id="draw_range_wt"></span>
+          </div>
+          <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="draw_range">
+          </div>
+        </div>
+
+        <div class="row" style="padding:10px">
+          <div class="row">
+            <label style="margin-right:10px">Computer skill Weight</label>
+            <span id="computer_range_wt"></span>
+          </div>
+          <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="computer_range">
+          </div>
+        </div>
+
+        <div class="row" style="padding:10px">
+          <div class="row">
+            <label style="margin-right:10px">Programming skill Weight</label>
+            <span id="programming_range_wt"></span>
+          </div>
+          <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="programming_range">
+          </div>
+        </div>
+
+        <div class="row" style="padding:10px">
+          <div class="row">
+            <label style="margin-right:10px">Computer graphics skill Weight</label>
+            <span id="cg_range_wt"></span>
+          </div>
+          <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="cg_range">
+          </div>
+        </div>
+
+        <div class="row" style="padding:10px">
+          <div class="row">
+            <label style="margin-right:10px">HCI skill Weight</label>
+            <span id="hci_range_wt"></span>
+          </div>
+          <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="hci_range">
+          </div>
+        </div>
+
+        <div class="row" style="padding:10px">
+          <div class="row">
+            <label style="margin-right:10px">UX skill Weight</label>
+            <span id="ux_range_wt"></span>
+          </div>
+          <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="ux_range">
+          </div>
+        </div>
+
+        <div class="row" style="padding:10px">
+          <div class="row">
+            <label style="margin-right:10px">communication skill Weight</label>
+            <span id="comm_range_wt"></span>
+          </div>
+          <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="comm_range">
+          </div>
+        </div>
+
+        <div class="row" style="padding:10px">
+          <div class="row">
+            <label style="margin-right:10px">Collaboration skill Weight</label>
+            <span id="collab_range_wt"></span>
+          </div>
+          <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="collab_range">
+          </div>
+        </div>
+
+        <div class="row" style="padding:10px">
+          <div class="row">
+            <label style="margin-right:10px">Repo skill Weight</label>
+            <span id="repo_range_wt"></span>
+          </div>
+          <div class="row slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="repo_range">
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+      <div class="col-md-7" style="padding-top:10px;">
+
+        <table style="width:100%;" id="grp-table">
+          <tr class="" style="text-align:center">
+            <td class="grp-table-td" id="grp1">
+            </td>
+            <td class="grp-table-td" id="grp2"></td>
+            <td class="grp-table-td" id="grp3"></td>
+          </tr>
+          <tr style="text-align:center">
+            <td class="grp-table-td" id="grp4"></td>
+            <td class="grp-table-td" id="grp5"></td>
+            <td class="grp-table-td" id="grp6"></td>
+          </tr>
+          <tr style="text-align:center">
+            <td class="grp-table-td" id="grp7"></td>
+            <td class="grp-table-td" id="grp8"></td>
+            <td class="grp-table-td" id="grp9"></td>
+          </tr>
+          <tr style="text-align:center">
+            <td class="grp-table-td" id="grp10"></td>
+            <td class="" id="">
+              <ul>
+                <li class="list-group-item py-1 row">
+                  <svg width="25" height="25">
+                    <rect width="25" height="25" style="fill:#DA6262" />
+                  </svg>
+                  <span>Overall Expert</span>
+                </li>
+                <li class="list-group-item py-1 row">
+                    <svg width="25" height="25">
+                      <rect width="25" height="25" style="fill:#0F5A6E" />
+                    </svg>
+                    <span>Overall Intermediate</span>
+                  </li>
+                  <li class="list-group-item py-1 row">
+                      <svg width="25" height="25">
+                        <rect width="25" height="25" style="fill:#5F6360" />
+                      </svg>
+                      <span>Overall Beginner</span>
+                    </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+  <footer style="text-align: center">
+    Project By : Rachhek Shrestha
+    <br> rachhek@kth.se
+  </footer>
+</body>
+
+<!-- <script type="text/javascript" src="surveydata.json"></script> -->
+<script type="text/javascript" src="surveydata.js"></script>
+<script src="d3_script.js"></script>
+<script src="my_js.js"></script>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/civilservant.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="aspect" style="display:none"></div>
+  <div id="whole_container">
+    <div id="nav">
+      <div class="emptydiv">
+      </div>
+      <div class="nav">
+        <div class="civil-servant-item nav navbar">
+          <a class="changeView active" name="energy" href="#"><i class="fa fa-fw fas fa-bolt"></i> Energy</a>
+          <a class="changeView" name="green" href="#"><i class="fa fa-fw fas fa-leaf"></i> Green Structure</a>
+          <a class="changeView" name="transport" href="#"><i class="fa fa-fw fas fa-car"></i> Transport</a>
+          <a class="changeView disabled" name="waste"><i class="fa fa-fw fas fa-trash"></i>Waste</a>
+          <a class="changeView disabled" name="co2emmision"><i class="fa fa-fw fas fa-fire"></i> Co2 Emission</a>
+          <a class="changeView " name="energy" href="politiciannew.html"><i class="fa fa-fw fas fa-user"></i> Politician</a>
+        </div>
+      </div>
+    </div>
+    <div class="civil-servant">
+      <div class="tile1">
+        <div class="civil-servant-item">
+          <div class="tile-view">
+            <div class="tile">
+              <div>
+                <p>Step 1</p>
+              </div>
+            </div>
+            <div class="tile-view-margin"></div>
+            <div class="tile-bar"></div>
+            <div class="stage">
+              Select a phase from the map !
+            </div>
+          </div>
+        </div>
+        <div class="civil-servant-item phase-detail">
+          <div class="phase-view">
+            <div class="phase">
+              <div>
+                <span id="phase"></span>
+              </div>
+              <div>
+                <p></p>
+              </div>
+            </div>
+            <div class="phase-view-margin"></div>
+            <div class="phase-bar"></div>
+            <div class="stage">
+              <div class="stage-inner">
+                <div class="stage-name">
+                  <span id="stage"></span>
+                </div>
+              </div>
+              <div class="stage-subinfo">
+                <div>
+                  <div><span id ="apartment"></span></div>
+                  <div><span class="stage-label">Atemp.m2</span></div>
+                </div>
+                <div>
+                  <div><span id="developer"></span></div>
+                  <div><span class="stage-label">Developers</span></div>
+                </div>
+                <div>
+                  <div><span id="year_start"></span></div>
+                  <div><span class="stage-label">Start Year</span></div>
+                </div>
+                <div>
+                  <div><span id="year_end"></span></div>
+                  <div><span class="stage-label">Finish Year</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="civil-servant-item map">
+          <div id="map-container">
+            <div id="map">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile2">
+        <div class="civil-servant-item">
+          <div class="tile-view">
+            <div class="tile">
+              <div>
+                <p>Step 2</p>
+              </div>
+            </div>
+            <div class="tile-view-margin"></div>
+            <div class="tile-bar"></div>
+            <div class="stage">
+              Adjust the weight of each score and select a developer
+            </div>
+          </div>
+        </div>
+        <div class="civil-servant-item sliderchart">
+          <div style="margin:0 auto;float:left">
+            <div class="row">
+              <div class="row">
+                <label>bicycle_parking_spacesapartment</label>
+                <span id="bicycle_parking_spacesapartment_wt"></span>
+                <div class="slidecontainer">
+                  <input type="range" min="1" max="10" value="5" class="slider"
+                                      id="bicycle_parking_spacesapartment">
+              </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="row">
+                  <label>total_energy_use_construction_wt</label>
+                  <span id="total_energy_use_construction_wt"></span>
+                </div>
+                <div class="row slidecontainer">
+                  <input type="range" min="1" max="10" value="5" class="slider"
+                                id="total_energy_use_construction">
+                        </div>
+                </div>
+
+                <div class="row">
+                  <div class="row">
+                    <label>car_parking_spacesapartment</label>
+                    <span id="car_parking_spacesapartment_wt"></span>
+                  </div>
+                  <div class="row slidecontainer">
+                    <input type="range" min="1" max="10" value="5" class="slider"
+                                id="car_parking_spacesapartment">
+                      </div>
+                  </div>
+
+
+                  <div class="row">
+                    <div class="row">
+                      <label>chare_of_electrical_charging_points</label>
+                      <span id="chare_of_electrical_charging_points_wt"></span>
+                    </div>
+                    <div class="row slidecontainer">
+                      <input type="range" min="1" max="10" value="5" class="slider"
+                              id="chare_of_electrical_charging_points">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="row">
+                        <label>green_space_index_gsi_construction_wt</label>
+                        <span id="green_space_index_gsi_construction_wt"></span>
+                      </div>
+                      <div class="row slidecontainer">
+                        <input type="range" min="1" max="10" value="5" class="slider"
+                            id="green_space_index_gsi_construction">
+                    </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="civil-servant-item bubble">
+                    <div id="bubblechartarea">
+                    </div>
+                  </div>
+                </div>
+                <div class="tile3">
+                  <div class="civil-servant-item">
+                    <div class="tile-view">
+                      <div class="tile">
+                        <div>
+                          <p>Step 3</p>
+                        </div>
+                      </div>
+                      <div class="tile-view-margin"></div>
+                      <div class="tile-bar"></div>
+                      <div style="font-weight: lighter;" class="stage">
+                        Select the bubble and radar chart will show the peformance.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="civil-servant-item radarchart">
+                    <div id="radarchart-item"></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+</body>
+
+</html>
+<script src="js/norra2.js"></script>
+<script src="js/bubblechart.js"></script>
+<script src="js/stackedradarChart.js"></script>
+<script src="js/map.js" type="module"></script>

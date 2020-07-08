@@ -1,0 +1,30 @@
+[
+	[
+      {"aspect": "local_electricity ",  "value": 100},
+      {"aspect": "total_energy",  "value": 60},
+      {"aspect": "green_space_index ", "value": 60},
+      {"aspect": "bicycle_parking ", "value": 25.2},
+      {"aspect": "size_recycling ", "value": 0}
+    ],
+	[
+      {"aspect": "local_electricity ",  "value": 100},
+      {"aspect": "total_energy",  "value": 55},
+      {"aspect": "green_space_index ",  "value": 6},
+      {"aspect": "bicycle_parking ", "value": 22},
+      {"aspect": "size_recycling ", "value": 0}
+    ],
+	[
+      {"aspect": "local_electricity ",  "value": 100},
+      {"aspect": "total_energy", "value": 54},
+      {"aspect": "green_space_index ",  "value": 61},
+      {"aspect": "bicycle_parking ",  "value": 25.2},
+      {"aspect": "size_recycling ","value": 0}
+    ],
+    [
+      {"aspect": "local_electricity ", "value": 47.5},
+      {"aspect": "total_energy",  "value": 38.94},
+      {"aspect": "green_space_index ",  "value": 62},
+      {"aspect": "bicycle_parking ", "value": 25.2},
+      {"aspect": "size_recycling ",  "value": 0}
+    ]
+  ]

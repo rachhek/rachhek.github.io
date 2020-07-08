@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="civilservant.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main-content">
+        <div class="civil-servant">
+            <div class="civil-servant-item tile1">
+                Step1
+            </div>
+            <div class="civil-servant-item tile2">
+                Step2
+            </div>
+            <div class="civil-servant-item tile3">
+                Step3
+            </div>
+            <div class="civil-servant-item map">Map</div>
+            <div class="civil-servant-item sliderchart">
+                <div style="margin:0 auto;float:left">
+                    <div class="row" style="padding:10px">
+                        <div class="row">
+                            <label style="margin-right:10px">bicycle_parking_spacesapartment</label>
+                            <span id="bicycle_parking_spacesapartment_wt"></span>
+                        </div>
+                        <div class="row slidecontainer">
+                            <input type="range" min="1" max="10" value="5" class="slider"
+                                id="bicycle_parking_spacesapartment">
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding:10px">
+                        <div class="row">
+                            <label style="margin-right:10px">total_energy_use_construction_wt</label>
+                            <span id="total_energy_use_construction_wt"></span>
+                        </div>
+                        <div class="row slidecontainer">
+                            <input type="range" min="1" max="10" value="5" class="slider"
+                                id="total_energy_use_construction">
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding:10px">
+                        <div class="row">
+                            <label style="margin-right:10px">car_parking_spacesapartment</label>
+                            <span id="car_parking_spacesapartment_wt"></span>
+                        </div>
+                        <div class="row slidecontainer">
+                            <input type="range" min="1" max="10" value="5" class="slider"
+                                id="car_parking_spacesapartment">
+                        </div>
+                    </div>
+
+
+                    <div class="row" style="padding:10px">
+                        <div class="row">
+                            <label style="margin-right:10px">chare_of_electrical_charging_points</label>
+                            <span id="chare_of_electrical_charging_points_wt"></span>
+                        </div>
+                        <div class="row slidecontainer">
+                            <input type="range" min="1" max="10" value="5" class="slider"
+                                id="chare_of_electrical_charging_points">
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding:10px">
+                        <div class="row">
+                            <label style="margin-right:10px">green_space_index_gsi_construction_wt</label>
+                            <span id="green_space_index_gsi_construction_wt"></span>
+                        </div>
+                        <div class="row slidecontainer">
+                            <input type="range" min="1" max="10" value="5" class="slider"
+                                id="green_space_index_gsi_construction">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="civil-servant-item bubble">
+                <div id="bubblechartarea">
+
+                </div>
+            </div>
+            <div id="chart" class="civil-servant-item radarchart"></div>
+
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="norra2.js"></script>
+<script src="bubblechart.js"></script>

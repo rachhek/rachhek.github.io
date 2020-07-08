@@ -1,0 +1,355 @@
+/*CSS Variables */
+/*CSS Variables */
+:root{
+    --primary : #ddd;
+    --dark :#333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104,104,104,0.8);
+
+    --darkPink: rgb(206,0,88);
+    --lightPink: rgb(228,177,195);
+    --darkGreen: rgb(0,164,153);
+    --lightGreen: rgb(182,215,211);
+    --darkOrange: rgb(220,68,5);
+    --lightOrange: rgb(233,189,155);
+    --darkBlue: rgb(0, 119, 200);
+    --lightBlue: rgb(172, 199, 233);
+    --darkPuple: rgb(132,50,155);
+    --lightPurple: rgb(188,170,208);
+    --yellow: rgb(254, 221, 0);
+    --grey: rgb(215, 210, 203);
+    --black: rgb(45, 41, 38);
+    --white: rgb(255,255,255);
+
+    
+
+
+}
+
+
+h1 { font-family: "Open Sans"; 
+    font-size: 28px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; } 
+
+h2 {font-family: "Open Sans";}
+
+h3 { font-family: "Open Sans"; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; } 
+
+h4 {font-family: "Open Sans";}
+
+h5 {font-family: "Open Sans";}
+
+h6 {font-family: "Open Sans";}
+
+p { font-family: "Open Sans"; font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; } 
+
+
+blockquote { font-family: "Open Sans"; 
+    font-size: 21px; font-style: normal; 
+    font-variant: normal; font-weight: 400; 
+    line-height: 30px; } 
+
+pre { font-family: "Open Sans"; 
+    font-size: 13px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 18.5714px; }
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body{
+    background-image:url(stockholmRoyalSeaport.jpg);
+    margin:30px 40px;
+    line-height: 1.4;
+
+}
+
+.btn{
+    background-color: var(--dark);
+    color :var(--light);
+    padding:0.2rem 1.0rem;
+    text-decoration: none;
+    border: 0;
+}
+
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+}
+
+/*navigation*/
+
+.main-nav ul{
+    display :grid;
+    grid-gap:10px;
+    padding:0;
+    list-style:none;
+    grid-template-columns: repeat(6 ,1fr);
+}
+
+.main-nav a{
+    background: var(--primary);
+    display:block;
+    text-decoration:none;
+    padding: 0.8rem;
+    text-align:center;
+    color:var(--dark);
+    text-transform: uppercase;
+    font-size:0.7rem;
+    box-shadow: var(--shadow);
+}
+.main-nav a:hover{
+    background: var(--dark);
+    color:var(--light);
+}
+
+/*navigation-civil-servant*/
+
+.main-nav-civil ul{
+    display :grid;
+    grid-gap:10px;
+    padding:0;
+    list-style:none;
+    grid-template-columns: repeat(3 ,1fr);
+}
+
+.main-nav-civil a{
+    background: var(--primary);
+    display:block;
+    text-decoration:none;
+    padding: 0.8rem;
+    text-align:center;
+    color:var(--dark);
+    text-transform: uppercase;
+    font-size:0.7rem;
+    box-shadow: var(--shadow);
+}
+.main-nav-civil a:hover{
+    background: var(--dark);
+    color:var(--light);
+}
+
+/*top Container */
+.civil-servant{
+    opacity: 0.9;
+    display:grid;
+    grid-gap:5px;
+    padding: 20px 0;
+    grid-template-areas:
+    'top-box-a bubble-chart bubble-chart'
+    'top-box-a bubble-chart bubble-chart'
+    'top-box-b bubble-chart bubble-chart'
+    'top-box-b bubble-chart bubble-chart';
+}
+/*politician*/
+.top-container-politician{
+    opacity: 0.8;
+    display:grid;
+    grid-gap:5px;
+    grid-template-areas:
+    'showcase showcase top-box-a' 
+    'showcase showcase top-box-b'
+    'showcase showcase top-box-b'
+    'showcase showcase top-box-c'
+    'line-chart line-chart line-chart';
+}
+
+.showcase{
+    grid-area:showcase;
+    min-height: 475px;
+    min-width: 250px;
+    padding :1rem;
+    background: var(--primary);
+    display: grid;
+    align-items :center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 0.5rem;
+}
+/*bubble-chart*/
+.bubble-chart{
+    grid-area:bubble-chart;
+    min-height: 470px;
+    min-width: 650px;
+    padding :1rem;
+    background: var(--primary);
+    display: grid;
+    align-items :center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 0.5rem;
+}
+
+.top-box{
+    background: var(--primary);
+    display: grid;
+    box-shadow: var(--shadow);
+    padding: 0.5rem;
+}
+.top-box-a{
+    justify-items: center;
+    grid-area:top-box-a;
+}
+
+.top-box-b{
+    justify-items: center;
+    grid-area:top-box-b;
+}
+.top-box-c{
+    justify-items: center;
+    grid-area:top-box-c;
+}
+.line-chart{
+    opacity: 0.8;
+    background: var(--primary);
+    display: grid;
+    box-shadow: var(--shadow);
+    padding: 0.5rem;
+}
+/*color-slider*/
+#coloredSlider {
+	float: left;
+	clear: left;
+    width: 300px;
+	margin: 15px;
+}
+#coloredSlider .ui-slider-range { 
+	background: #ff0000; 
+}
+
+#coloredSlider .ui-state-default, .ui-widget-content .ui-state-default {
+	background: none;
+	background-color: #FFF;
+}
+
+/* Style the navigation bar */
+.navbar {
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;   
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px; 
+    width: 40%;
+    background-color :var(--darkGreen);
+    overflow: auto;
+    float: right;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color:var(--white) ;
+    color:  #000;
+  }
+  
+  /* Current/active navbar link */
+
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+  /* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--darkGreen);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 2px var(--darkGreen);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .labelfontdesc
+  {   
+    padding-top: 25px; 
+    display:inline-block;
+    font-family: "Open Sans"; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 500; 
+    line-height: 18.5714px; 
+    color: black;
+    text-align:center;
+  }
